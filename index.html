@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin=""
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+                <img src="./image/logo.png" alt="">
+                <div class="tete">
+                    <input type="text" name="Ville" id="recherche" placeholder="Rechercher une ville ..." />
+                    <input type="button" value="Rechercher" id="rechercherBtn"/>
+                </div>
+        </header>
+        <main>
+            <div id="card">
+                <div class="name_date">
+                    <h2 id="name">Name</h2>
+                    <p id="date"></p>
+                </div>
+                <img src="./image/clear_sky.png" alt="" id="weather">
+                <div class="temperature_temps">
+                    <h2 id="temperature">0 °C</h2>
+                    <p id="temps">Ciel dégagé</p>
+                </div>
+                <div class="info">
+                    <div class="precision">
+                        <img src="./image/wind.png" alt="">
+                        <p>Vent: </p>
+                        <p id="vitesse">0 km/h</p>
+                    </div>
+                    <div class="precision">
+                        <img src="./image/humidity.png" alt="">
+                        <p>Précipitations: </p>
+                        <p id="precip">0 %</p>
+                    </div>
+                    <div class="precision">
+                        <img src="./image/rain2.png" alt="">
+                        <p>Humidité: </p>
+                        <p id="humid">0 %</p>
+                    </div>
+                </div>
+            </div>
+            <div id="map"></div>
+        </main>
+
+        <script
+            src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""
+        ></script>
+        <script src="./script.js"></script>
+    </body>
+</html>

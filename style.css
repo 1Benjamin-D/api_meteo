@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+}
+header {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+main {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+#map {
+    height: 400px;
+    width: 650px;
+}
+#card{
+    width: 25%;
+    padding: 20px;
+    color: white;
+    background-color: #23A3EA;
+    text-align: center;
+    border-radius: 10px;
+}
+.name_date{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.temperature_temps{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+.precision{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.info{
+    margin-top: 30px;
+}
