@@ -5,7 +5,7 @@ header {
     padding-top: 40px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-right: 20px;
 }
 main {
@@ -42,4 +42,33 @@ main {
 }
 .info{
     margin-top: 30px;
+}
+li{
+    list-style: none;
+    border: solid 1px black;
+    cursor: pointer;
+}
+ul{
+    position: absolute;
+    top: 50px;
+    left: -35px;
+    z-index: 10;
+}
+#map{
+    border-radius: 10px;
+}
+#recherche{
+    padding: 10px;
+    border-radius: 10px;
+}
+#rechercherBtn{
+    background-color: #23A3EA;
+    padding: 5px;
+    border-radius: 10px;
+}
+.tete{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
 }
