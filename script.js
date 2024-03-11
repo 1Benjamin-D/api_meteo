@@ -95,7 +95,7 @@ function rechercherAdresse() {
     }
     
     function obtenirDonneesMeteo(coordinates) {
-        var openWeatherMapUrl = "http://api.openweathermap.org/data/2.5/forecast?lat=" + coordinates[1] + "&lon=" + coordinates[0] + "&lang=fr&appid=0d47d640a383307597fca125db84f064";
+        var openWeatherMapUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=" + coordinates[1] + "&lon=" + coordinates[0] + "&lang=fr&appid=0d47d640a383307597fca125db84f064";
         
         fetch(openWeatherMapUrl)
         .then(response => response.json())
